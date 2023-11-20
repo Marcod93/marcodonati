@@ -1,7 +1,13 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(fonts/Roboto-Thin-webfont.woff);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto';
   }
   
   .menu-container {
@@ -41,7 +47,21 @@
   .photo-grid-item {
     border: 1px solid #fff;
     width: 50%;
-    height: 300px;
     background-color: red;
+    padding: 15px;
   } 
  
+  .photo-grid-item h2{
+    text-align: center;
+  }
+  .about-me p{
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  .skils{
+    margin-top: 30px;
+  }
+  .skils li{
+    list-style: none;
+  }
