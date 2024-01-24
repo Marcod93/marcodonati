@@ -4,64 +4,129 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-  }
-  
-  .menu-container {
-    color: #fff;
-    background-color: #5995DA;  /* Blue */
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+body {
+  background: linear-gradient(135deg, #3498db, #e74c3c);
+}
+
+.menu-container {
+  padding: 40px 20px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background: linear-gradient(135deg, #f1c40f, #e67e22);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background 0.3s ease; /* Puoi regolare la durata e la funzione di easing */
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  width: calc(50% - 30px); /* Calcolato per avere spazi uniformi tra gli elementi */
+  margin: 15px; /* Aggiunto margine per uno spazio più gradevole */
+  padding: 15px;
+  text-align: justify;
+}
+
+.about-me p{
+  color: #f2f2f2;
+  line-height: 2;
+  font-size: 18px;
+}
+
+.skils li{
+  color: #f2f2f2;
+  font-size: 18px;
+list-style: none;
+line-height: 2;
+
+}
+
+.lavori {
+  background: linear-gradient(135deg, rgba(231, 76, 60, 0.7), rgba(52, 152, 219, 0.7));
+  background-size: 200% 100%;
+  transition: background-position 0.5s ease;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunto ombra */
+
+}
+
+.lavori:hover {
+  background-position: -100% 0;
+}
+
+.photo-grid-item h2 {
+  text-align: center;
+  color: #001F3F;
+}
+
+.lavori p {
+  margin-top: 10px; /* Aggiunto spazio tra il titolo e la descrizione */
+  text-align: justify;
+}
+
+.logo {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+/* Stile mobile */
+@media screen and (max-width: 768px) {
   .menu {
-    width: 1200px;
-    display: flex;
-    justify-content:flex-end;
-    justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
   }
-  .menu li{
-    float: left;
-    list-style: none;
+
+  .menu a {
+      display: block;
+      width: 100%;
+      text-align: center;
   }
-  .menu li:hover{
-    cursor: pointer;
-  }
-  .photo-grid-container {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .photo-grid {
-    width: 1200px;
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;    
-  }
-  
+
   .photo-grid-item {
-    border: 1px solid #fff;
-    width: 50%;
-    background-color: red;
-    padding: 15px;
-  } 
- 
-  .photo-grid-item h2{
-    text-align: center;
+      width: calc(100% - 30px); /* A larghezza completa su dispositivi mobili */
   }
-  .about-me p{
-    text-align: justify;
-    line-height: 1.5;
-    margin-top: 20px;
-  }
-  .skils{
-    margin-top: 30px;
-  }
-  .skils li{
-    list-style: none;
-  }
+}
