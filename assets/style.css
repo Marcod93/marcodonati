@@ -68,19 +68,12 @@ body {
   text-align: justify;
 }
 
-.about-me p{
+.about-me p, .skils p{
   color: #f2f2f2;
   line-height: 2;
   font-size: 18px;
 }
 
-.skils li{
-  color: #f2f2f2;
-  font-size: 18px;
-list-style: none;
-line-height: 2;
-
-}
 .skills-background{
   background-image: url(img/skills.png);
   background-position: center;
@@ -101,8 +94,10 @@ line-height: 2;
 }
 
 .photo-grid-item h2 {
-  text-align: center;
+  text-align: left;
   color: #001F3F;
+  font-size: 30px;
+  margin-bottom: 15px;
 }
 
 .lavori p {
