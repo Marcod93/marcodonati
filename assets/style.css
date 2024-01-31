@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #333;
 }
 
 body {
@@ -96,13 +95,15 @@ body {
 .photo-grid-item h2 {
   text-align: left;
   color: #001F3F;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 15px;
 }
 
 .lavori p {
   margin-top: 10px;
   text-align: justify;
+  line-height: 2;
+  color: #f2f2f2;
 }
 
 .logo {
@@ -148,8 +149,7 @@ footer i{
 
 form {
   max-width: 600px;
-  margin: 20px auto;
-  border-radius: 10px;
+  margin: 0px auto;
 }
 
 label {
