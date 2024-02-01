@@ -48,26 +48,26 @@ body {
   transition: background 0.3s ease;
 }
 
-.photo-grid-container {
+.grid-container {
   display: flex;
   justify-content: center;
 }
 
-.photo-grid {
+.grid {
   width: 1200px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.photo-grid-item {
+.grid-item {
   width: calc(50% - 30px); 
   margin: 15px; 
   padding: 15px;
   text-align: justify;
 }
 
-.about-me p, .skils p{
+p{
   color: #f2f2f2;
   line-height: 2;
   font-size: 18px;
@@ -92,18 +92,11 @@ body {
   background-position: -100% 0;
 }
 
-.photo-grid-item h2 {
+.grid-item h2 {
   text-align: left;
   color: #001F3F;
   font-size: 40px;
   margin-bottom: 15px;
-}
-
-.lavori p {
-  margin-top: 10px;
-  text-align: justify;
-  line-height: 2;
-  color: #f2f2f2;
 }
 
 .logo {
@@ -202,10 +195,10 @@ form strong{
       text-align: center;
   }
 
-  .photo-grid-item {
+  .grid-item {
       width: calc(100% - 30px); 
   }
-  .photo-grid-item.skills-background{
+  .grid-item.skills-background{
     padding: 180px;
 
   }
