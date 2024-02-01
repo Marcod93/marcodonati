@@ -1,107 +1,165 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marco Donati</title>
-    <link rel='stylesheet' href='assets/style.css'/>
+    <link rel='stylesheet' href='assets/style.css' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
-    <!--Creo il menu dfe-->
+
     <nav class='menu-container'>
-      <div>
-        <ul class="menu">
-          <li class='date' href="#">ABOUT ME</li>
-          <li class='signup' href="#">LAVORI</li>
-          <li class='login' href="#">CONTATTI</li>
-      </ul>
-      </div>
+        <div>
+            <ul class="menu">
+                <li class='date'><a href="#section-skils">SKILSS</a></li>
+                <li class='signup'><a href="#section-lavori">LAVORI</a></li>
+                <li class='login'><a href="contact.html">CONTATTI</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div class='container'>
-      <div class='grid'>
-        <!--About me 1 row-->
-        <div class='item first-item'>
-          <img src='images/one.svg'/>
+    <div class=' grid-container'>
+        <!-- About me -->
+        <div class=' grid'>
+            <div class=' grid-item'>
+                <img src="assets/img/foto-profilo.png">
+            </div>
+            <div class=' grid-item about-me'>
+                <h2 style="color: linear-gradient(135deg, #3498db, #e74c3c);">MARCO DONATI</h2>
+                <p>
+                    Benvenuto nel mio mondo digitale! Sono un ragazzo appassionato di <strong>TECNLOGIA</strong> e
+                    <strong> CREATIVITA'</strong>.
+                    Da sempre appassionato per le ultime innovazioni nel mondo della tecnologia,
+                    un interesse che mi ha portato a esplorare le <strong>PROFONDITA DEL DIGITALE</strong>.
+                    Con una formazione e una passione per l'apprendimento continuo,
+                    mi dedico a esplorare le sfide e le opportunità che la tecnologia moderna offre.
+                    Sono qui per <strong>TE</strong>, per rendere la tua esperienza digitale più piacevole, efficiente e
+                    significativa.
+                </p>
+            </div>
+
+            <!-- Skills -->
+            <div id="section-skils" class=' grid-item skils'>
+                <h2>UN PO' DI ME</h2>
+                <p>La mia carriera nel settore IT inzia con una formazione presso l'istituto CEFI e 4 anni di esperienza
+                    lavorativa in
+                    un'azienda di informatica. Ho iniziato con un corso di web design e una volta finito, ho avuto
+                    l'opportunità di lavorare con
+                    un tutor altamente competente e molto disponibile. La mia crescita professionale è iniziata con un
+                    focus sul front-end,
+                    dove ho sviluppato competenze in <strong>HTML</strong>, <strong>CSS</strong>,
+                    <strong>jQuery</strong>
+                    e <strong>JavaScript</strong>.
+
+                    Attraverso il mio percorso e per la mia passione per la programmazione, ho esteso le mie abilità al
+                    back-end, potendo cimentarmi nell'utilizzo di
+                    <strong>C#</strong> e <strong>MySQL</strong> per la creazione di applicazioni.
+
+                    Nel corso degli anni, ho acquisito esperienza nell'utilizzo del framework <strong>Bootstrap</strong>
+                    per creare
+                    interfacce <strong>responsive</strong> e <strong>user-friendly</strong>. Questa versatilità
+                    nel'imparare a lavorare
+                    su entrambi i lati dello sviluppo web mi ha permesso di offrire soluzioni integrate e complete.
+
+                    Nel mio percorso professionale, ho deciso di intraprendere la strada del freelance per esplorare
+                    nuove sfide e mettere a frutto le competenze acquisite, qui ho consolidato l'utilizzo della
+                    piattaforma <strong>WordPress</strong>
+                    e <strong>WooCommerce</strong> per la realizzazione di siti web su misura per i clienti.
+
+                    Il desiderio di esplorare ulteriormente il vasto panorama dello sviluppo software, ho deciso di seguire 
+                    un corso tramite la piattaforma Start2Impact sulla <strong>blockchain</strong>, attraverso il quale,
+                    ho approfondito le competenze in <strong>Python</strong> e <strong>MongoDB</strong>. 
+
+                    Il mio <strong>OBBIETTIVO</strong> è di trasformare le visioni dei clienti in
+                    <strong>realtà</strong>, utilizzando le mie competenze
+                    tecniche e creative.
+                </p>
+            </div>
+            <div class=' grid-item skills-background'>
+
+            </div>
+
+            <!-- I miei lavori -->
+
+            <div id="section-lavori" class=' grid-item' style="width: 100%;">
+                <h2>I MIEI LAVORI</h2>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://dermatologiaestetica.eu/" target="_blank">
+                    <div class="logo" style="background-image: url(assets/img/dottoressa.png);"></div>
+                </a>
+                <h2>DOTT.SSA BARANOVSKAIA</h2>
+                <p>Ho sviluppato il sito per lo studio dermatologico DOTT.SSA BARANOVSKAIA dopo un'approfondita
+                    analisi dei competitor. Identificando i punti di forza e di debolezza, ho creato un sito che 
+                    offre una piattaforma facile da navigare per prenotare visite e contattare direttamente lo studio.</p>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://www.occhialematto.com/" target="_blank">
+                    <div class="logo" style="background-image: url(assets/img/occhialematto.png);"></div>
+                </a>
+                <h2>OCCHIALE MATTO</h2>
+                <p>Il risultato è un sito che riesce ad offrire un'esperienza di acquisto online senza 
+                    complicazioni. Dall'interfaccia semplice e intuitiva, all'ampia selezione di stili, 
+                    ho lavorato su ogni dettaglio per rendere Occhiale Matto un luogo accogliente dove poter 
+                    trovare e acquistare gli occhiali perfetti.</p>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://verniplast.com/" target="_blank">
+                    <div class="logo"
+                        style="background-image: url(assets/img/Logo-VERNIPLAST.jpg); background-color: #0e4d95;"></div>
+                </a>
+                <h2>VERNIPLAST SRL</h2>
+                <p>La creazione di questo sito è stata il risultato di un impegno mirato a superare i competitor. 
+                    Dopo un'approfondita analisi del settore delle vernici, ho sviluppato una strategia precisa insieme al cliente
+                    che mette in risalto i nostri punti di forza. </p>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://benfattoechiantello.it/" target="_blank">
+                    <div class="logo" style="background-image: url(assets/img/benfatto.png);"></div>
+                </a>
+                <h2>BENFATTO</h2>
+                <p>La mia missione era rendere l'esperienza di acquisto online il più semplice e intuitivo possibile. 
+                    Dopo un'analisi approfondita del settore, ho progettato il sito Benfatto con un'interfaccia pulita 
+                    e navigazione agevole, garantendo che ogni visitatore possa accedere facilmente ai prodotti.</p>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://www.martinamalizia.it/" target="_blank">
+                    <div class="logo" style="background-image: url(assets/img/martina.png);"></div>
+                </a>
+                <h2>PSICOLOGA MARTINA</h2>
+                <p>Ho progettsto questo sito dedicando tempo per riflettere la personalità di Martina nel design e nella struttura del sito. 
+                    Ogni dettaglio è stato curato per trasmettere l'amore e la passione con cui Martina svolge il suo lavoro.</p>
+            </div>
+
+            <div class='grid-item lavori'>
+                <a href="https://romabarshow.com/" target="_blank">
+                    <div class="logo"
+                        style="background-image: url(assets/img/romabarshow.png); background-color: black;"></div>
+                </a>
+                <h2>ROMA BAR SHOW 22</h2>
+                <p>La mia missione era rendere il sito accattivante e funzionale, in modo da offrire a tutti una fantastica 
+                    esperienza di prenotazione e partecipazione. Con un design innovativo e un'interfaccia user-friendly, 
+                    ho reso possibile l'acquisto rapido dei biglietti e la prenotazione di tavoli in pochi clic.</p>
+            </div>
+
         </div>
-        <div class='item'>
-        <h2>About me</h2>
-        <p>
-          Ciao sono Marco Donati, un ragazzo appassionato di tecnologia e creatività.
-          Da sempre appasionato per le ultime innovazioni nel mondo della tecnologia,
-          un interesse che mi ha portato a esplorare le profondità del digitale.
-          Con una formazione e una passione per l'apprendimento continuo, 
-          mi dedico a esplorare le sfide e le opportunità che la tecnologia moderna offre.
-          Attraverso la mia esperienza, ho sviluppato competenze sia nel mondo del back end sia in quello front end.    
-          La mia missione è fornirti soluzioni tecnologiche avanzate e ispirarti a fare sempre meglio. Sono qui per te, 
-          per rendere la tua esperienza digitale più piacevole, efficiente e significativa.      
-        </p>
+        <div class='photo-grid-item'>
+          <img src='images/four.svg'/>
         </div>
-        <!--2 row-->
-        <div class='item'>
-          <h2>Le mie Skills</h2>
+        <div class='photo-grid-item last-item'>
+          <img src='images/five.svg'/>
         </div>
-        <div class='item'>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>C#</li>
-            <li>JQuery</li>
-            <li>Utilizzo piattaforma wordpress</li>
-            <li>Photoshop</li>
-            <li>Utilizzo framework Bootstrap</li>
-            <li>MySql</li>
-            <li>Cobol</li>
-          </ul>
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>PHP</li>
-            <li>Javascript</li>
-            <li>Typescript</li>
-            <li>Python</li>
-            <li>Django</li>
-          </ul>
-        </div>
-        <!--3 row-->
-        <div class='item' style="width: 100%;">
-          <h2>I miei progetti</h2>
-        </div>
-        <hr>
-        <!--4 row-->
-        <div class='item'>
-          <h2>Verniplast</h2>
-        </div>
-        <div class='item'>
-          <h2>DOTT.SSA BARANOVSKAIA</h2>
-        </div>
-        <div class='item'>
-          <h2>Occhiale Matto</h2>
-        </div>
-        <div class='item'>
-          <h2>Sea change</h2>
-        </div>
-        <div class='item'>
-          <h2>Psicologa martina</h2>
-        </div>
-        <div class='item'>
-          <h2>Mercato nel parco</h2>
-        </div>
-        <div class='item'>
-          <h2>Benfatto</h2>
-        </div>
-        <div class='item'>
-          <h2>Etnicasicily</h2>
-        </div>
-        <div class='item'>
-          <h2>The shave</h2>
-        </div>
-        <div class='item'>
-          <h2>Sacit</h2>
-        </div>
-        <div class='item'>
-          <h2>MSA</h2>
-        </div>
-      </div>
-    </div>
+
+    </footer>
 </body>
+
 </html>
