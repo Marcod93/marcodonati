@@ -24,8 +24,7 @@ La cartella `asset` contiene le risorse necessarie, suddivise nelle sottocartell
 Per visualizzare il sito localmente, puoi clonare questo repository e aprire i file HTML nel tuo browser.
 
 ```bash
-git clone https://github.com/tuonome/tuoprogetto.git
-cd tuoprogetto
+git clone https://github.com/Marcod93/marcodonati.git
 ```
 
 ## Utilizzo
