@@ -1,30 +1,5 @@
 @font-face {
   font-family: 'Roboto';
-<<<<<<< HEAD
-  src: url(font/Roboto-Thin-webfont.woff) format('woff');
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
-  }
-  
-  .menu-container {
-    color: #fff;
-    background-color: #5995DA;  /* Blue */
-    padding: 20px 0;
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  
-  .menu {
-    width: 1200px;
-    display: flex;
-    justify-content: space-around;
-=======
   src: url(fonts/Roboto-Thin-webfont.woff);
 }
 
@@ -72,6 +47,9 @@ body {
   color: transparent;
   transition: background 0.3s ease;
 }
+h1{
+  color: linear-gradient(135deg, #3498db, #e74c3c);
+}
 
 .grid-container {
   display: flex;
@@ -79,7 +57,7 @@ body {
 }
 
 .grid {
-  width: 1200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -99,7 +77,7 @@ p{
 }
 
 .skills-background{
-  background-image: url(img/skills.png);
+  background-image: url(../img/skills.png);
   background-position: center;
   background-size: cover;
 }
@@ -112,7 +90,9 @@ p{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 }
-
+#section-lavori{
+  width: 100%;
+}
 .lavori:hover {
   background-position: -100% 0;
 }
@@ -131,6 +111,27 @@ p{
   background-position: center;
   background-color: white;
   margin-bottom: 15px;
+}
+
+#dottoressa{
+  background-image: url(../img/dottoressa.png);
+}
+#occhialematto{
+  background-image: url(../img/occhialematto.png);
+}
+#verniplast{
+  background-image: url(../img/Logo-VERNIPLAST.jpg);
+   background-color: #0e4d95;
+}
+#benfatto{
+  background-image: url(../img/benfatto.png);
+}
+#martina{
+  background-image: url(../img/martina.png);
+}
+#barshow{
+  background-image: url(../img/romabarshow.png); 
+  background-color: black;
 }
 
 footer {
@@ -198,7 +199,9 @@ button {
   cursor: pointer;
   width: 100%;
 }
-
+button strong{
+  color: white;
+}
 strong{
   background: linear-gradient(135deg, #3498db, #e74c3c);
   padding: 5PX;
@@ -212,7 +215,6 @@ form strong{
   .menu {
       flex-direction: column;
       align-items: center;
->>>>>>> dev
   }
 
   .menu a {
@@ -224,38 +226,15 @@ form strong{
   .grid-item {
       width: calc(100% - 30px); 
   }
-<<<<<<< HEAD
-  .container {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  
-  .grid {
-    width: 1200px;
-    display: flex;
-    justify-content: center; 
-    flex-wrap: wrap;    
-  }
-  
-  .item {
-    border: 1px solid #fff;
-    width: 45%;
-    background-color: red;
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.4;
-    margin-left: 20px;
-  } 
-
-  h2, h3{
-    text-align: center;
-  }
- 
-=======
   .grid-item.skills-background{
     padding: 180px;
 
   }
+  img{
+    max-width: 100% !important;
+  }
+
+  .grid-item h2{
+    font-size: 30px !important;
+  }
 }
->>>>>>> dev
